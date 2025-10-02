@@ -20,8 +20,8 @@ const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/certifications": true,
+  "/recommendations": true,
 };
 
 const display: DisplayConfig = {
@@ -188,7 +188,7 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "Portfolio",
   description: home.description,
   email: "lorant@once-ui.com",
 };

@@ -1,0 +1,47 @@
+---
+title: "Winlads Gaming & Rewards Platform"
+publishedAt: "2024-12-01"
+summary: "Full-stack gaming and rewards platform with 10+ microservices serving 5k+ active users, featuring real-time session handling and multi-tenant architecture."
+team:
+  - name: "Avishka Abeywickrama"
+    role: "Software Engineer"
+    avatar: "/images/Avishka.jpeg"
+    linkedIn: "https://www.linkedin.com/in/avishka-abeywickrama"
+---
+
+## Overview
+
+Winlads is a comprehensive gaming and rewards platform designed to serve 5k+ active users with real-time gaming sessions, user point systems, and multi-tenant architecture supporting admin, vendor, and client portals.
+
+## Key Features
+
+- **Microservices Architecture**: Built with 10+ microservices using NestJS, ensuring scalability and maintainability for high-traffic applications.
+- **Real-time Gaming Sessions**: Implemented WebSocket connections for live gaming experiences with session management and state synchronization.
+- **User Point System**: Developed a comprehensive rewards and points system with Redis caching for fast point calculations and leaderboards.
+- **Multi-tenant Architecture**: Created separate portals for administrators, vendors, and clients with role-based access control and data isolation.
+- **Performance Optimization**: Optimized PostgreSQL queries and implemented Redis caching, reducing response times by 25% and improving scalability under high-concurrency workloads.
+
+## Technical Implementation
+
+- **Backend**: NestJS with TypeScript for type-safe, scalable API development
+- **Frontend**: React with Next.js for server-side rendering and optimal performance
+- **Database**: PostgreSQL with Prisma ORM for robust data management
+- **Caching**: Redis for session management and performance optimization
+- **Cloud Infrastructure**: AWS services including S3 for file storage and SQS for message queuing
+- **Authentication**: Firebase integration for secure user authentication
+- **Containerization**: Docker for consistent deployment across environments
+
+## Performance Achievements
+
+- **25% Response Time Reduction**: Through PostgreSQL query optimization and Redis caching strategies
+- **30% Deployment Time Improvement**: Automated CI/CD pipelines with GitHub Actions and SonarQube
+- **High Concurrency Support**: Successfully handling 10k+ daily users with optimized database queries and caching
+- **Code Quality Enhancement**: Integrated SonarQube for static analysis, improving overall code quality and maintainability
+
+## Challenges and Solutions
+
+One of the main challenges was managing real-time gaming sessions while maintaining data consistency across multiple microservices. The solution involved implementing a robust event-driven architecture with proper error handling and retry mechanisms. Additionally, optimizing database performance for high-concurrency scenarios required careful indexing strategies and query optimization.
+
+## Outcome
+
+The platform successfully serves 5k+ active users with real-time gaming capabilities, demonstrating the effectiveness of microservices architecture and performance optimization strategies. The implementation of automated CI/CD pipelines and code quality tools has significantly improved the development workflow and deployment efficiency.

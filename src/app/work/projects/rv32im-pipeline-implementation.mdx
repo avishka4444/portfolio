@@ -1,0 +1,78 @@
+---
+title: "RV32IM Pipeline Implementation"
+publishedAt: "2024-09-15"
+summary: "Complete RISC-V processor implementation with pipelined architecture, supporting RV32IM instruction set with hardware design and verification."
+team:
+  - name: "Avishka Abeywickrama"
+    role: "Hardware Engineer"
+    avatar: "/images/Avishka.jpeg"
+    linkedIn: "https://www.linkedin.com/in/avishka-abeywickrama"
+github: "https://github.com/cepdnaclk/e18-co502-RV32IM-pipeline-implementation-group05"
+demo: "https://cepdnaclk.github.io/e18-co502-RV32IM-pipeline-implementation-group05/"
+---
+
+## Overview
+
+A comprehensive implementation of a pipelined RISC-V processor supporting the RV32IM instruction set architecture. The project demonstrates advanced computer architecture principles through hardware design, implementation, and verification using Verilog HDL and modern development tools.
+
+## Key Features
+
+- **RISC-V Architecture**: Complete implementation of RV32IM instruction set
+- **Pipelined Design**: 5-stage pipeline architecture for improved performance
+- **Hardware Components**: Instruction memory, data memory, cache, and register file
+- **Control Unit**: Comprehensive control logic for instruction execution
+- **Pipeline Registers**: Efficient data flow between pipeline stages
+- **Verification**: Thorough testing and validation using simulation tools
+
+## Technical Implementation
+
+- **Hardware Description**: Verilog HDL for RTL design and implementation
+- **Simulation**: Icarus Verilog for comprehensive testing and validation
+- **Waveform Analysis**: GTKWave for detailed signal analysis and debugging
+- **Pipeline Architecture**: 5-stage pipeline with fetch, decode, execute, memory, and writeback
+- **Memory Management**: Instruction and data memory with cache implementation
+- **Register File**: 32-bit register file with 32 general-purpose registers
+
+## Hardware Components
+
+- **Instruction Memory**: Program storage and instruction fetching
+- **Data Memory**: Data storage and memory access operations
+- **Cache Memory**: High-speed cache for frequently accessed data
+- **Register File**: 32 x 32-bit registers (x0 to x31) with hardwired zero register
+- **Control Unit**: Instruction decoding and control signal generation
+- **Pipeline Registers**: Data storage between pipeline stages
+- **ALU**: Arithmetic and Logic Unit for computation operations
+
+## Pipeline Architecture
+
+- **Fetch Stage**: Instruction fetching from instruction memory
+- **Decode Stage**: Instruction decoding and register file access
+- **Execute Stage**: ALU operations and address calculation
+- **Memory Stage**: Data memory access operations
+- **Writeback Stage**: Result writing back to register file
+- **Hazard Handling**: Data and control hazard detection and resolution
+
+## Key Achievements
+
+- **Complete Implementation**: Full RV32IM instruction set support
+- **Pipeline Optimization**: Efficient 5-stage pipeline design
+- **Hardware Verification**: Comprehensive testing and validation
+- **Performance Analysis**: Detailed performance metrics and optimization
+- **Documentation**: Thorough documentation of design and implementation
+
+## Challenges and Solutions
+
+The main challenge was implementing a complex pipelined architecture while ensuring correct instruction execution and handling various hazards. The solution involved careful design of the pipeline stages and implementing robust hazard detection and resolution mechanisms. Additionally, ensuring compatibility with the RISC-V specification required meticulous attention to instruction encoding and execution semantics.
+
+## Outcome
+
+The RV32IM Pipeline Implementation demonstrates advanced understanding of computer architecture principles and hardware design. The project successfully implements a complete RISC-V processor with pipelined architecture, providing a solid foundation for understanding modern processor design concepts. The comprehensive verification process ensures reliability and correctness of the implementation.
+
+## Technology Stack
+
+- **Hardware Description**: Verilog HDL
+- **Simulation**: Icarus Verilog
+- **Waveform Analysis**: GTKWave
+- **Architecture**: RISC-V RV32IM
+- **Pipeline**: 5-stage pipeline design
+- **Memory**: Instruction and data memory with cache

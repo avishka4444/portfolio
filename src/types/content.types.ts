@@ -25,6 +25,8 @@ export type Person = {
   email: string;
   /** IANA time zone location */
   location: IANATimeZone;
+  /** Human-readable location for display */
+  displayLocation?: string;
   /** Languages spoken */
   languages?: string[];
 };
@@ -187,6 +189,8 @@ export interface About extends BasePageConfig {
     skills: Array<{
       /** Skill title */
       title: string;
+      /** Skill icon */
+      icon?: string;
       /** Skill description */
       description?: React.ReactNode;
       /** Skill tags */
@@ -216,23 +220,67 @@ export interface About extends BasePageConfig {
 export interface Blog extends BasePageConfig {}
 
 /**
+ * Certification configuration.
+ */
+export interface Certification {
+  /** Certification name */
+  name: string;
+  /** Issuing organization */
+  issuer: string;
+  /** Date of certification */
+  date: string;
+  /** Certification description */
+  description?: React.ReactNode;
+  /** Credential ID or verification link */
+  credentialId?: string;
+  /** Verification URL */
+  verificationUrl?: string;
+  /** Badge or logo image */
+  badge?: string;
+}
+
+/**
+ * Certifications page configuration.
+ * @description Configuration for the Certifications page, including metadata and certification list.
+ */
+export interface Certifications extends BasePageConfig {
+  /** List of certifications */
+  certifications: Certification[];
+}
+
+/**
+ * LinkedIn recommendation data structure.
+ * @description Represents a single LinkedIn recommendation with all relevant details.
+ */
+export interface Recommendation {
+  /** Name of the person giving the recommendation */
+  name: string;
+  /** Role/title of the recommender */
+  role: string;
+  /** Company of the recommender */
+  company: string;
+  /** The recommendation content/text */
+  content: string;
+  /** Date when the recommendation was given */
+  date: string;
+  /** LinkedIn profile URL of the recommender */
+  linkedinUrl?: string;
+  /** Avatar image of the recommender */
+  avatar?: string;
+}
+
+/**
+ * Recommendations page configuration.
+ * @description Configuration for the Recommendations page, including metadata and recommendation list.
+ */
+export interface Recommendations extends BasePageConfig {
+  /** List of recommendations */
+  recommendations: Recommendation[];
+}
+
+/**
  * Work/projects page configuration.
  * @description Configuration for the Work/Projects page, including metadata and navigation label.
  */
 export interface Work extends BasePageConfig {}
 
-/**
- * Gallery page configuration.
- * @description Configuration for the Gallery page, including metadata, navigation label, and image list.
- */
-export interface Gallery extends BasePageConfig {
-  /** List of images in the gallery */
-  images: Array<{
-    /** Image source path */
-    src: string;
-    /** Image alt text */
-    alt: string;
-    /** Image orientation (horizontal/vertical) */
-    orientation: string;
-  }>;
-}

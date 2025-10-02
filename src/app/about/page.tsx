@@ -96,7 +96,7 @@ export default function About() {
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
+              {person.displayLocation || person.location}
             </Row>
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">
@@ -133,7 +133,18 @@ export default function About() {
                 }}
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">Schedule a call</Row>
+                <Row paddingX="8">
+                  <Button
+                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting%20with%20Avishka%20Abeywickrama"
+                    variant="tertiary"
+                    size="s"
+                    weight="default"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Schedule a call
+                  </Button>
+                </Row>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -301,7 +312,7 @@ export default function About() {
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8" paddingTop="8">
                         {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={`${skill.title}-${tagIndex}`} size="l" prefixIcon={tag.icon}>
+                          <Tag key={`${skill.title}-${tagIndex}`} size="l">
                             {tag.name}
                           </Tag>
                         ))}
