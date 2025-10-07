@@ -41,7 +41,7 @@ export function Recommendations({ recommendations }: RecommendationsProps) {
                 {recommendation.avatar && (
                   <Avatar
                     src={recommendation.avatar}
-                    size="m"
+                    size="l"
                   />
                 )}
                 <Column gap="xs">

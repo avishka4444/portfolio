@@ -1,0 +1,41 @@
+.timelineContainer {
+  position: relative;
+  padding-left: 8px;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 31px; // Centered on the dot (24px + 8px padding + 7px to center on 16px dot)
+  top: 8px; // Start after first dot
+  bottom: 8px; // End before last dot
+  width: 2px;
+  background: var(--brand-alpha-medium);
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.certificationItem {
+  position: relative;
+}
+
+.certificationRow {
+  position: relative;
+  align-items: flex-start;
+}
+
+.timelineDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--brand-alpha-medium);
+  border: 3px solid var(--neutral-alpha-weak);
+  flex-shrink: 0;
+  margin-top: 8px; // Align with the first line of the heading
+  box-shadow: 0 0 0 2px var(--brand-alpha-weak);
+  z-index: 10;
+  position: relative;
+}
+
+.content {
+  // Content styles
+}

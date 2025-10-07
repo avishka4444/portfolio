@@ -40,13 +40,13 @@ export function CategorizedCertifications({
             
             {/* Timeline Container */}
             <Column fillWidth gap="l" style={{ position: "relative", paddingLeft: "8px" }}>
-              {/* Timeline Line */}
+              {/* Timeline Line - Continuous vertical line */}
               <div
                 style={{
                   position: "absolute",
-                  left: "31px", // Centered on the dot (24px + 8px padding + 7px to center on 16px dot)
-                  top: "8px", // Start after first dot
-                  bottom: "8px", // End before last dot
+                  left: "31px", // Centered on the dots
+                  top: "0px",
+                  bottom: "0px",
                   width: "2px",
                   background: "var(--brand-alpha-medium)",
                   borderRadius: "1px",
@@ -55,30 +55,31 @@ export function CategorizedCertifications({
               />
               
               {category.certifications.map((certification, index) => (
-                <RevealFx
-                  key={`${certification.name}-${index}`}
-                  translateY="16"
-                  delay={categoryIndex * 0.2 + index * 0.1}
-                >
-                  <Row gap="l" fillWidth style={{ position: "relative" }}>
-                    {/* Timeline Dot */}
-                    <div
-                      style={{
-                        width: "16px",
-                        height: "16px",
-                        borderRadius: "50%",
-                        background: "var(--brand-alpha-medium)",
-                        border: "3px solid var(--neutral-alpha-weak)",
-                        flexShrink: 0,
-                        marginTop: "6px",
-                        boxShadow: "0 0 0 2px var(--brand-alpha-weak)",
-                        zIndex: 2,
-                        position: "relative",
-                      }}
-                    />
-                    
-                    {/* Content */}
-                    <Column fillWidth gap="m" padding="l" style={{ marginLeft: "8px" }}>
+                <div key={`${certification.name}-${index}`} style={{ position: "relative" }}>
+                  <RevealFx
+                    translateY="16"
+                    delay={categoryIndex * 0.2 + index * 0.1}
+                  >
+                    <Row gap="l" fillWidth style={{ position: "relative", alignItems: "flex-start" }}>
+                      {/* Timeline Dot - Centered exactly on the line */}
+                      <div
+                        style={{
+                          width: "16px",
+                          height: "16px",
+                          borderRadius: "50%",
+                          background: "var(--brand-alpha-medium)",
+                          border: "3px solid var(--neutral-alpha-weak)",
+                          flexShrink: 0,
+                          boxShadow: "0 0 0 2px var(--brand-alpha-weak)",
+                          zIndex: 10,
+                          position: "absolute",
+                          left: "calc(var(--static-space-8) + var(--static-space-16) - 8px)", // Center the 16px circle on the 2px line
+                          top: "calc(var(--static-space-l) + 20px)", // Align horizontally with the center of the certification title
+                        }}
+                      />
+                      
+                      {/* Content */}
+                      <Column fillWidth gap="m" padding="l" style={{ marginLeft: "32px" }}>
                       {/* Title and Date */}
                       <Row fillWidth horizontal="between" vertical="start">
                         <Column gap="xs">
@@ -150,6 +151,7 @@ export function CategorizedCertifications({
                     </Column>
                   </Row>
                 </RevealFx>
+                </div>
               ))}
             </Column>
           </Column>

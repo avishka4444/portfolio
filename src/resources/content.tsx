@@ -94,7 +94,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting%20with%20Avishka%20Abeywickrama&details=Hi%20there!%0A%0AI'd%20love%20to%20schedule%20a%20meeting%20to%20discuss:%0A%0A•%20Potential%20collaboration%20opportunities%0A•%20Your%20software%20engineering%20needs%0A•%20Technical%20consulting%20services%0A•%20Project%20requirements%20and%20timelines%0A%0APlease%20let%20me%20know%20your%20preferred%20time%20and%20any%20specific%20topics%20you'd%20like%20to%20cover.%0A%0ALooking%20forward%20to%20connecting!%0A%0ABest%20regards,%0AAvishka%20Abeywickrama%0ASoftware%20Engineer%0AEmail:%20avishkaabeywickrama99@gmail.com%0ALinkedIn:%20https://www.linkedin.com/in/avishka-abeywickrama&location=Video%20Call%20(Google%20Meet/Zoom)",
   },
   intro: {
     display: true,
@@ -884,7 +884,7 @@ const recommendations: Recommendations = {
         "I had the chance to study and work together with Avishka, and I've always admired her drive and determination. She's someone who learns new things really fast, takes responsibility seriously, and is always willing to go the extra mile to make things work. During our AI/ML research and development projects, her contributions played a big part in moving things forward and making them a success. On top of that, she's reliable, collaborative, and genuinely great to work with. I have no doubt she'll excel wherever she goes.",
       date: "Sept 2025",
       linkedinUrl: "https://linkedin.com/in/kushan-manahara",
-       avatar: "/images/projects/project-01/avatar-01.jpg",
+       avatar: "/kushan.png",
     },
     {
       name: "Malitha Liyanage",
@@ -894,7 +894,7 @@ const recommendations: Recommendations = {
         "I had the pleasure of working with Avishka at Future Labs (Pvt) Ltd, and was impressed by her professionalism, adaptability, and collaborative mindset. She quickly learned React fundamentals, synced up with the team, and consistently delivered quality work. When given new tasks, she could figure out the requirements, design solutions, and implement them effectively, making her a key contributor to the team's success. She also has a strong interest and knowledge in AI, which adds great value to her technical skill set.",
       date: "Sept 2025",
       linkedinUrl: "https://linkedin.com/in/malitha-liyanage",
-       avatar: "/images/gallery/horizontal-1.jpg",
+       avatar: "/malitha.jpeg",
     },
     {
       name: "Thakshila Jayathilake",
@@ -904,7 +904,6 @@ const recommendations: Recommendations = {
         "I had the privilege of working closely with Avishka during our university days, both on academic projects and beyond. One of the things I admire most about her is her ability to deliver her part of the work completely and calmly, never letting stress compromise the quality of what she produces. She collaborated with our team end-to-end, always bringing good ideas and a sense of responsibility, which taught the rest of us the value of balance. She's an intelligent, resourceful person, the kind of teammate who isn't easily replaced. Even outside academics, like during sports events, she showed the same dedication and commitment to the goal. I believe she would bring the same drive and reliability to any team she joins.",
       date: "Sept 2025",
        linkedinUrl: "https://www.linkedin.com/in/thakshila-jayathilake-5919b5213",
-       avatar: "/images/gallery/horizontal-2.jpg",
     },
     {
       name: "Tharaka Senevirathne",
@@ -914,7 +913,6 @@ const recommendations: Recommendations = {
         "I have had the pleasure of working with Avishka, and I wholeheartedly recommend her for her exceptional technical expertise and problem-solving skills. She has consistently demonstrated a deep understanding of MERN, effectively tackling complex challenges with innovative solutions. Her ability to learn quickly, adapt to new technologies, and collaborate seamlessly with team members has made her an indispensable part of our team. She handles high-pressure situations with ease, consistently delivering results ahead of schedule. Avishka's professionalism, attention to detail, and proactive approach make her a valuable asset to any organization.",
       date: "Aug 2025",
       linkedinUrl: "https://linkedin.com/in/tharaka-senevirathne",
-       avatar: "/images/gallery/horizontal-3.jpg",
     },
     {
       name: "Muthuni De Alwis",
@@ -924,7 +922,7 @@ const recommendations: Recommendations = {
         "Avishka is hardworking, responsible, and a quick learner with a strong work ethic, which makes her both dependable and inspiring. She naturally creates a positive and supportive environment and is always ready to help others, share her knowledge, and encourage her peers, making her a joy to work alongside. I'm certain that, Avishka will continue to make a positive impact and bring great value in any role she takes on.",
       date: "Aug 2025",
       linkedinUrl: "https://linkedin.com/in/muthuni-de-alwis",
-       avatar: "/images/gallery/horizontal-4.jpg",
+       avatar: "/muthuni.jpeg",
     },
   ],
 };
