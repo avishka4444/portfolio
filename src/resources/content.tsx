@@ -609,6 +609,94 @@ const certifications: Certifications = {
 // Categorized certifications for better organization
 const certificationCategories = [
   {
+    title: "Full-Stack Development",
+    certifications: [
+      {
+        name: "Front-End Web Development",
+        issuer: "University of Moratuwa",
+        date: "Feb 2023",
+        credentialId: "P1epHIyKVk",
+        description:
+          "Comprehensive course covering modern web development technologies and best practices",
+        verificationUrl:
+          "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
+      },
+      {
+        name: "Web Design for Beginners",
+        issuer: "University of Moratuwa",
+        date: "Jun 2022",
+        credentialId: "9IU5ZrusRk",
+        description: "Skills: Web Design · Python (Programming Language)",
+      },
+      {
+        name: "SQL (Basic) Certificate",
+        issuer: "HackerRank",
+        date: "Feb 2023",
+        credentialId: "EF55FAF8E338",
+        description: "Skills: MySQL",
+        verificationUrl: "https://www.hackerrank.com/certificates/ef55faf8e338",
+      },
+      {
+        name: "SQL (Intermediate) Certificate",
+        issuer: "HackerRank",
+        date: "Feb 2023",
+        credentialId: "030CF42A0E30",
+        description: "Skills: MySQL",
+        verificationUrl: "https://www.hackerrank.com/certificates/030cf42a0e30",
+      },
+      {
+        name: "Python Programming",
+        issuer: "University of Moratuwa",
+        date: "Aug 2022",
+        credentialId: "0Q7iwenIUM",
+        description: "Skills: Python (Programming Language)",
+        verificationUrl:
+          "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
+      },
+      {
+        name: "Python for Beginners",
+        issuer: "University of Moratuwa",
+        date: "May 2022",
+        credentialId: "l8bUUrEfMn",
+        description: "Skills: Python (Programming Language)",
+      },
+      {
+        name: "Java(Basic)",
+        issuer: "HackerRank",
+        date: "May 2022",
+        description: "Skills: Java",
+        verificationUrl: "https://www.hackerrank.com/certificates/f2166d230025",
+      },
+      {
+        name: "Using Python to Access Web Data",
+        issuer: "Coursera",
+        date: "Jul 2020",
+        credentialId: "694W3ZP7W44K",
+        description: "Skills: Python (Programming Language)",
+        verificationUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/694W3ZP7W44K",
+      },
+      {
+        name: "Programming for Everybody (Getting Started with Python)",
+        issuer: "Coursera",
+        date: "Jun 2020",
+        credentialId: "CCBD8R5MB7ED",
+        description: "Skills: Python (Programming Language)",
+        verificationUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/CCBD8R5MB7ED",
+      },
+      {
+        name: "Python Data Structures",
+        issuer: "Coursera",
+        date: "Jun 2020",
+        credentialId: "WRH9KSXR33QF",
+        description: "Skills: Python (Programming Language) · Data Structures",
+        verificationUrl:
+          "https://www.coursera.org/account/accomplishments/certificate/WRH9KSXR33QF",
+      },
+    ],
+  },
+  {
     title: "AI/ML & Deep Learning",
     certifications: [
       {
@@ -665,6 +753,17 @@ const certificationCategories = [
     ],
   },
   {
+    title: "Data Analysis",
+    certifications: [
+      {
+        name: "Data Flow Analysis",
+        issuer: "Indian Institute of Technology, Bombay",
+        date: "Aug 2022",
+        description: "Advanced data flow analysis techniques and methodologies",
+      },
+    ],
+  },
+  {
     title: "Project Management & Collaboration",
     certifications: [
       {
@@ -691,104 +790,6 @@ const certificationCategories = [
         issuer: "Great Learning",
         date: "2023",
         description: "Skills: Agile Methodologies · Jira Software",
-      },
-    ],
-  },
-  {
-    title: "Web Development & Design",
-    certifications: [
-      {
-        name: "Front-End Web Development",
-        issuer: "University of Moratuwa",
-        date: "Feb 2023",
-        credentialId: "P1epHIyKVk",
-        description:
-          "Comprehensive course covering modern web development technologies and best practices",
-        verificationUrl:
-          "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
-      },
-      {
-        name: "Web Design for Beginners",
-        issuer: "University of Moratuwa",
-        date: "Jun 2022",
-        credentialId: "9IU5ZrusRk",
-        description: "Skills: Web Design · Python (Programming Language)",
-      },
-    ],
-  },
-  {
-    title: "Database & SQL",
-    certifications: [
-      {
-        name: "SQL (Basic) Certificate",
-        issuer: "HackerRank",
-        date: "Feb 2023",
-        credentialId: "EF55FAF8E338",
-        description: "Skills: MySQL",
-        verificationUrl: "https://www.hackerrank.com/certificates/ef55faf8e338",
-      },
-      {
-        name: "SQL (Intermediate) Certificate",
-        issuer: "HackerRank",
-        date: "Feb 2023",
-        credentialId: "030CF42A0E30",
-        description: "Skills: MySQL",
-        verificationUrl: "https://www.hackerrank.com/certificates/030cf42a0e30",
-      },
-    ],
-  },
-  {
-    title: "Programming Languages",
-    certifications: [
-      {
-        name: "Python Programming",
-        issuer: "University of Moratuwa",
-        date: "Aug 2022",
-        credentialId: "0Q7iwenIUM",
-        description: "Skills: Python (Programming Language)",
-        verificationUrl:
-          "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
-      },
-      {
-        name: "Python for Beginners",
-        issuer: "University of Moratuwa",
-        date: "May 2022",
-        credentialId: "l8bUUrEfMn",
-        description: "Skills: Python (Programming Language)",
-      },
-      {
-        name: "Java(Basic)",
-        issuer: "HackerRank",
-        date: "May 2022",
-        description: "Skills: Java",
-        verificationUrl: "https://www.hackerrank.com/certificates/f2166d230025",
-      },
-      {
-        name: "Using Python to Access Web Data",
-        issuer: "Coursera",
-        date: "Jul 2020",
-        credentialId: "694W3ZP7W44K",
-        description: "Skills: Python (Programming Language)",
-        verificationUrl:
-          "https://www.coursera.org/account/accomplishments/certificate/694W3ZP7W44K",
-      },
-      {
-        name: "Programming for Everybody (Getting Started with Python)",
-        issuer: "Coursera",
-        date: "Jun 2020",
-        credentialId: "CCBD8R5MB7ED",
-        description: "Skills: Python (Programming Language)",
-        verificationUrl:
-          "https://www.coursera.org/account/accomplishments/certificate/CCBD8R5MB7ED",
-      },
-      {
-        name: "Python Data Structures",
-        issuer: "Coursera",
-        date: "Jun 2020",
-        credentialId: "WRH9KSXR33QF",
-        description: "Skills: Python (Programming Language) · Data Structures",
-        verificationUrl:
-          "https://www.coursera.org/account/accomplishments/certificate/WRH9KSXR33QF",
       },
     ],
   },
@@ -820,17 +821,6 @@ const certificationCategories = [
         issuer: "IEEE Student Branch of SLTC",
         date: "Jan 2021",
         description: "Skills: Arduino",
-      },
-    ],
-  },
-  {
-    title: "Data Analysis",
-    certifications: [
-      {
-        name: "Data Flow Analysis",
-        issuer: "Indian Institute of Technology, Bombay",
-        date: "Aug 2022",
-        description: "Advanced data flow analysis techniques and methodologies",
       },
     ],
   },

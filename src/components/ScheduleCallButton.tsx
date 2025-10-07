@@ -3,7 +3,7 @@
 import { Button } from "@once-ui-system/core";
 
 interface ScheduleCallButtonProps {
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "tertiary";
   size?: "s" | "m" | "l";
   weight?: "default" | "strong";
   className?: string;

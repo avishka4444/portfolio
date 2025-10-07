@@ -45,7 +45,6 @@ export default async function RootLayout({
       )}
     >
       <head>
-        <link rel="icon" href="/images/Avishka.jpeg" type="image/jpeg" />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

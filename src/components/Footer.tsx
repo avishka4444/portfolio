@@ -86,7 +86,7 @@ LinkedIn: https://www.linkedin.com/in/avishka-abeywickrama`,
                   icon={item.icon}
                   tooltip={item.name}
                   size="s"
-                  variant="ghost"
+                  variant="tertiary"
                 />
               ),
           )}
