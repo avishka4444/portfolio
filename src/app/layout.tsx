@@ -23,6 +23,9 @@ export async function generateMetadata() {
     baseURL: baseURL,
     path: home.path,
     image: home.image,
+    icons: {
+      icon: [],
+    },
   });
 }
 
@@ -45,6 +48,7 @@ export default async function RootLayout({
       )}
     >
       <head>
+        <link rel="icon" href="/images/Avishka.jpeg" type="image/jpeg" />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

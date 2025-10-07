@@ -29,23 +29,37 @@ export const ScheduleCallButton = ({
 
     // Pre-fill the calendar event with template details
     const eventDetails = {
-      text: "Meeting with Avishka Abeywickrama",
+      text: "Consultation Call with Avishka Abeywickrama",
       details: `Hi there!
 
-I'd love to schedule a meeting to discuss:
+Thank you for visiting my portfolio and showing interest in working together! I'm excited to learn about your project and discuss how I can help bring your ideas to life.
 
-• Potential collaboration opportunities
-• Your software engineering needs
-• Technical consulting services
-• Project requirements and timelines
+**What we can discuss:**
+• Your project requirements and goals
+• Technical approach and architecture recommendations
+• Timeline and development phases
+• Budget and resource planning
+• How my expertise can benefit your project
+• Any questions you have about my work or experience
 
-Please let me know your preferred time and any specific topics you'd like to cover.
+**What to expect:**
+• 30-60 minute consultation (no charge)
+• I'll ask about your project vision and technical needs
+• We'll discuss the best approach for your specific requirements
+• I'll provide initial insights and recommendations
+• We can explore how to move forward if it's a good fit
 
-Looking forward to connecting!
+**Please come prepared with:**
+• Brief description of your project
+• Any specific technical challenges you're facing
+• Your timeline and budget considerations
+• Questions about my experience or approach
+
+I'm looking forward to learning about your project and exploring how we can work together to achieve your goals!
 
 Best regards,
 Avishka Abeywickrama
-Software Engineer
+Full-Stack Software Engineer
 Email: avishkaabeywickrama99@gmail.com
 LinkedIn: https://www.linkedin.com/in/avishka-abeywickrama`,
       location: "Video Call (Google Meet/Zoom)",

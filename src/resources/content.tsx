@@ -46,13 +46,18 @@ const social: Social = [
     icon: "email",
     link: `mailto:${person.email}`,
   },
+  {
+    name: "Kaggle",
+    icon: "kaggle",
+    link: "https://www.kaggle.com/avishkaabeywickrama",
+  },
 ];
 
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.firstName}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Building scalable software solutions</>,
   featured: {
@@ -324,6 +329,10 @@ const about: About = {
             icon: "mongodb",
           },
           {
+            name: "Firebase",
+            icon: "firebase",
+          },
+          {
             name: "Redis",
             icon: "redis",
           },
@@ -342,6 +351,30 @@ const about: About = {
         tags: [
           {
             name: "AWS",
+            icon: "aws",
+          },
+          {
+            name: "Amazon RDS",
+            icon: "aws",
+          },
+          {
+            name: "CloudFormation",
+            icon: "aws",
+          },
+          {
+            name: "ECS",
+            icon: "aws",
+          },
+          {
+            name: "Lambda",
+            icon: "aws",
+          },
+          {
+            name: "S3",
+            icon: "aws",
+          },
+          {
+            name: "CloudFront",
             icon: "aws",
           },
           {
@@ -649,7 +682,7 @@ const certificationCategories = [
         issuer: "University of Moratuwa",
         date: "Aug 2022",
         credentialId: "0Q7iwenIUM",
-        description: "Skills: Python (Programming Language)",
+        description: "Comprehensive Python programming course covering procedural, object-oriented, and functional programming paradigms. Learning outcomes include developing and evaluating programs using standard programming constructs, creating appropriate techniques and libraries to solve problems, and developing professional software development skills including communication, analytical abilities, and employability skills for the ICT industry.",
         verificationUrl:
           "https://open.uom.lk/lms/mod/customcert/verify_certificate.php",
       },
@@ -658,7 +691,7 @@ const certificationCategories = [
         issuer: "University of Moratuwa",
         date: "May 2022",
         credentialId: "l8bUUrEfMn",
-        description: "Skills: Python (Programming Language)",
+        description: "Foundational Python programming course designed for beginners. Covers basic programming constructs, problem-solving techniques, and introduces professional software development practices. Prepares participants for lifelong learning in the evolving technological landscape.",
       },
       {
         name: "Java(Basic)",
@@ -672,7 +705,7 @@ const certificationCategories = [
         issuer: "Coursera",
         date: "Jul 2020",
         credentialId: "694W3ZP7W44K",
-        description: "Skills: Python (Programming Language)",
+        description: "Specialized course covering web data extraction using regular expressions, web protocols, API integration, and XML data processing. Skills gained include Python Programming, Web Scraping, JSON, API development, XML, Network Protocols, RESTful API, TCP/IP, Web Services, HTML, Data Capture, and Data Import/Export.",
         verificationUrl:
           "https://www.coursera.org/account/accomplishments/certificate/694W3ZP7W44K",
       },
@@ -681,7 +714,7 @@ const certificationCategories = [
         issuer: "Coursera",
         date: "Jun 2020",
         credentialId: "CCBD8R5MB7ED",
-        description: "Skills: Python (Programming Language)",
+        description: "Comprehensive Python programming course covering installation, basic programming concepts, variables, functions, and loops. Skills gained include Python Programming, Computer Programming, Computational Thinking, Programming Principles, Software Installation, and Development Environment setup.",
         verificationUrl:
           "https://www.coursera.org/account/accomplishments/certificate/CCBD8R5MB7ED",
       },
@@ -690,7 +723,7 @@ const certificationCategories = [
         issuer: "Coursera",
         date: "Jun 2020",
         credentialId: "WRH9KSXR33QF",
-        description: "Skills: Python (Programming Language) · Data Structures",
+        description: "Advanced Python course covering data structures principles, file I/O operations, dictionaries, tuples, and multi-step data processing tasks. Skills gained include Data Structures, Python Programming, File Management, Data Processing, Data Manipulation, Programming Principles, Virtual Environment, and Development Environment management.",
         verificationUrl:
           "https://www.coursera.org/account/accomplishments/certificate/WRH9KSXR33QF",
       },
@@ -771,7 +804,7 @@ const certificationCategories = [
         issuer: "Atlassian",
         date: "Sep 2023",
         credentialId: "277141362",
-        description: "Skills: Confluence · Project Management",
+        description: "Comprehensive training in Confluence fundamentals covering content creation, collaboration features, page organization, and team workspace management. Skills gained include document collaboration, knowledge management, team communication, and project documentation best practices.",
         verificationUrl:
           "https://university.atlassian.com/student/award/NMEugicecepUhg35pHax4tam",
       },
@@ -781,7 +814,7 @@ const certificationCategories = [
         date: "Sep 2023",
         credentialId: "276886427",
         description:
-          "Skills: Agile Methodologies · Project Management · Jira Software",
+          "Fundamental training in Jira software covering issue tracking, project management, workflow configuration, and agile methodologies. Skills gained include agile project management, issue lifecycle management, sprint planning, team collaboration, and software development workflow optimization.",
         verificationUrl:
           "https://university.atlassian.com/student/award/U4DwjETNMhGnZHvMGFsbq6vu",
       },
@@ -789,7 +822,7 @@ const certificationCategories = [
         name: "Jira Project Management",
         issuer: "Great Learning",
         date: "2023",
-        description: "Skills: Agile Methodologies · Jira Software",
+        description: "Advanced project management training using Jira software covering agile methodologies, sprint management, team coordination, and project tracking. Skills gained include agile project management, sprint planning, team collaboration, workflow optimization, and software development lifecycle management.",
       },
     ],
   },
@@ -832,20 +865,7 @@ const certificationCategories = [
         issuer: "ACES",
         date: "2023",
         description:
-          "Entertainment and Enlightenment Category, Project: Voice4U",
-      },
-      {
-        name: "ACES Pre Coders",
-        issuer: "ACES",
-        date: "2023",
-        description: "Selected for the final round (ACES Coders)",
-      },
-      {
-        name: "RoboFest (SLIIT)",
-        issuer: "SLIIT",
-        date: "2023",
-        description:
-          "Qualifying into the final round of the University Level Competition",
+          "Our team 'InNov8Q' emerged victorious at the ACES Hackathon 2023 under the Entertainment and Enlightenment category. We developed an innovative solution for differently abled people to help them communicate with society. The solution uses image processing techniques to recognize sign language and actions, converting them into text displayed through a mobile application. Additionally, app users can convert text or voice messages into sign language images, displayed as animated videos on the mobile application.",
       },
     ],
   },
