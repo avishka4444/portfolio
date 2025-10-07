@@ -23,9 +23,6 @@ export async function generateMetadata() {
     baseURL: baseURL,
     path: home.path,
     image: home.image,
-    icons: {
-      icon: [],
-    },
   });
 }
 
