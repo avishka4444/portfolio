@@ -87,7 +87,7 @@ LinkedIn: https://www.linkedin.com/in/avishka-abeywickrama`,
         }}
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
-          <Text onBackground="neutral-weak">© {currentYear} /</Text>
+          <Text onBackground="neutral-weak">© {currentYear} -</Text>
           <Text paddingX="4">{person.name}</Text>
         </Text>
         <Row gap="16" vertical="center">
