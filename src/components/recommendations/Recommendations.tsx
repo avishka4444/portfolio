@@ -1,6 +1,6 @@
 "use client";
 
-import { Column, Heading, Row, Text, Button, Avatar, RevealFx } from "@once-ui-system/core";
+import { Column, Heading, Row, Text, Button, RevealFx } from "@once-ui-system/core";
 import { Recommendation } from "@/types";
 
 interface RecommendationsProps {
@@ -38,12 +38,6 @@ export function Recommendations({ recommendations }: RecommendationsProps) {
           >
             <Row fillWidth horizontal="between" vertical="start" marginBottom="m">
               <Row gap="m" vertical="center">
-                {recommendation.avatar && (
-                  <Avatar
-                    src={recommendation.avatar}
-                    size="l"
-                  />
-                )}
                 <Column gap="xs">
                   <Heading variant="heading-strong-m">
                     {recommendation.name}

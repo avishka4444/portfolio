@@ -120,8 +120,28 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Arimac Digital",
+        timeframe: "Jan 2026 - Present · Colombo (Hybrid)",
+        role: "Software Engineer I",
+        achievements: [
+          <>
+            Building and maintaining enterprise digital solutions for fintech
+            and BFSI clients across web and mobile platforms.
+          </>,
+          <>
+            Developing scalable, API-first features in collaboration with
+            cross-functional teams in a hybrid work environment.
+          </>,
+          <>
+            Contributing to cloud-native deployments on Azure, delivering
+            high-quality software aligned with client requirements.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Kingteza Software Solutions (Pvt) Ltd",
-        timeframe: "Feb 2025 - Present",
+        timeframe: "Feb 2025 - Dec 2025",
         role: "Software Engineer",
         achievements: [
           <>
@@ -259,6 +279,10 @@ const about: About = {
             icon: "java",
           },
           {
+            name: "C#",
+            icon: "csharp",
+          },
+          {
             name: "C",
             icon: "c",
           },
@@ -296,12 +320,20 @@ const about: About = {
             icon: "nestjs",
           },
           {
+            name: ".NET",
+            icon: "dotnet",
+          },
+          {
             name: "Express.js",
             icon: "express",
           },
           {
             name: "Angular",
             icon: "angular",
+          },
+          {
+            name: "Vue.js",
+            icon: "javascript",
           },
         ],
         images: [],
@@ -349,6 +381,10 @@ const about: About = {
           </>
         ),
         tags: [
+          {
+            name: "Microsoft Azure",
+            icon: "azure",
+          },
           {
             name: "AWS",
             icon: "aws",
@@ -887,42 +923,58 @@ const recommendations: Recommendations = {
   description: `LinkedIn recommendations from colleagues, managers, and clients who have worked with ${person.firstName}.`,
   recommendations: [
     {
+      name: "Shehan Madhusanka",
+      role: "Senior Software Engineer",
+      company: "Cut+Dry Inc.",
+      content:
+        "I had the opportunity to study and work with Avishka during our undergraduate years, where we collaborated on several academic and volunteer projects. Avishka was always dependable and brought great ideas, strong technical skills, and a positive attitude to every project. Avishka consistently demonstrated strong leadership and teamwork, bringing people together and keeping projects moving smoothly. Her proactive approach, focus, and problem-solving mindset made a real impact on the success of every project she was part of. It was a pleasure working with her, and I'm confident she'll continue to excel and make a strong impact in her career.",
+      date: "Oct 2025",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
+    },
+    {
+      name: "Tharuja Sandeepanie",
+      role: "Specialist Software Engineer",
+      company: "Yaala Labs",
+      content:
+        "I had the pleasure of working closely with Avishka at Future Labs for more than eight months, during which she consistently impressed me with her technical expertise, professionalism, and positive outlook. Avishka is a skilled full-stack software engineer with solid hands-on experience in both frontend and backend technologies. Her technical toolkit includes: Frontend: React/Redux, Angular. Backend: AWS, Docker, Python, and Google Cloud. She has a strong grasp of system design principles and software development best practices, and she quickly adapts to new tools and frameworks with remarkable ease. Beyond her technical strengths, Avishka stands out for her exceptional communication, collaborative mindset, and analytical problem-solving skills. Her positive energy and supportive nature make her a valuable asset in any team setting. Overall, I highly recommend Avishka as a reliable, talented, and adaptable software engineer. She would be an excellent addition to any organization fortunate enough to have her.",
+      date: "Oct 2025",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
+    },
+    {
       name: "Kushan Manahara",
-      role: "Machine Learning Engineer",
-      company: "CML Insight",
+      role: "AI/ML Engineer",
+      company: "",
       content:
         "I had the chance to study and work together with Avishka, and I've always admired her drive and determination. She's someone who learns new things really fast, takes responsibility seriously, and is always willing to go the extra mile to make things work. During our AI/ML research and development projects, her contributions played a big part in moving things forward and making them a success. On top of that, she's reliable, collaborative, and genuinely great to work with. I have no doubt she'll excel wherever she goes.",
       date: "Sept 2025",
-      linkedinUrl: "https://linkedin.com/in/kushan-manahara",
-       avatar: "/kushan.png",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
     },
     {
       name: "Malitha Liyanage",
       role: "Software Engineer | AWS Certified Solutions Architect (Associate)",
-      company: "Yaala Labs",
+      company: "",
       content:
         "I had the pleasure of working with Avishka at Future Labs (Pvt) Ltd, and was impressed by her professionalism, adaptability, and collaborative mindset. She quickly learned React fundamentals, synced up with the team, and consistently delivered quality work. When given new tasks, she could figure out the requirements, design solutions, and implement them effectively, making her a key contributor to the team's success. She also has a strong interest and knowledge in AI, which adds great value to her technical skill set.",
       date: "Sept 2025",
-      linkedinUrl: "https://linkedin.com/in/malitha-liyanage",
-       avatar: "/malitha.jpeg",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
     },
     {
       name: "Thakshila Jayathilake",
-      role: "Associate Software Engineer",
-      company: "Xigenix",
+      role: "Full-Stack Software Engineer",
+      company: "XigeniX",
       content:
         "I had the privilege of working closely with Avishka during our university days, both on academic projects and beyond. One of the things I admire most about her is her ability to deliver her part of the work completely and calmly, never letting stress compromise the quality of what she produces. She collaborated with our team end-to-end, always bringing good ideas and a sense of responsibility, which taught the rest of us the value of balance. She's an intelligent, resourceful person, the kind of teammate who isn't easily replaced. Even outside academics, like during sports events, she showed the same dedication and commitment to the goal. I believe she would bring the same drive and reliability to any team she joins.",
       date: "Sept 2025",
-       linkedinUrl: "https://www.linkedin.com/in/thakshila-jayathilake-5919b5213",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
     },
     {
       name: "Tharaka Senevirathne",
-      role: "Software Engineer | Masters in Information Technology, Software Engineering",
+      role: "Full-Stack Software Engineer",
       company: "",
       content:
         "I have had the pleasure of working with Avishka, and I wholeheartedly recommend her for her exceptional technical expertise and problem-solving skills. She has consistently demonstrated a deep understanding of MERN, effectively tackling complex challenges with innovative solutions. Her ability to learn quickly, adapt to new technologies, and collaborate seamlessly with team members has made her an indispensable part of our team. She handles high-pressure situations with ease, consistently delivering results ahead of schedule. Avishka's professionalism, attention to detail, and proactive approach make her a valuable asset to any organization.",
       date: "Aug 2025",
-      linkedinUrl: "https://linkedin.com/in/tharaka-senevirathne",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
     },
     {
       name: "Muthuni De Alwis",
@@ -931,8 +983,7 @@ const recommendations: Recommendations = {
       content:
         "Avishka is hardworking, responsible, and a quick learner with a strong work ethic, which makes her both dependable and inspiring. She naturally creates a positive and supportive environment and is always ready to help others, share her knowledge, and encourage her peers, making her a joy to work alongside. I'm certain that, Avishka will continue to make a positive impact and bring great value in any role she takes on.",
       date: "Aug 2025",
-      linkedinUrl: "https://linkedin.com/in/muthuni-de-alwis",
-       avatar: "/muthuni.jpeg",
+      linkedinUrl: "https://www.linkedin.com/in/avishka-abeywickrama/details/recommendations/",
     },
   ],
 };
