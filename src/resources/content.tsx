@@ -24,7 +24,7 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
 
@@ -106,7 +106,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I'm a full-stack Software Engineer with hands-on experience
+        I&apos;m a full-stack Software Engineer with hands-on experience
         building and scaling high-traffic applications (10k+ daily users) across
         fintech, gaming, and education domains. Skilled in React, Next.js,
         NestJS, and PostgreSQL with a strong track record of optimizing
@@ -242,7 +242,7 @@ const about: About = {
           <>
             G.C.E. Advanced Level - Physical Science (2018)
             <br />
-            Results: 2A's, 1B
+            Results: 2A&apos;s, 1B
           </>
         ),
       },

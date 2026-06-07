@@ -53,7 +53,7 @@ export function Recommendations({ recommendations }: RecommendationsProps) {
             </Row>
             
             <Text variant="body-default-m" style={{ lineHeight: "1.6" }}>
-              "{recommendation.content}"
+              {`"${recommendation.content}"`}
             </Text>
 
             {recommendation.linkedinUrl && (
