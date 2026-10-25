@@ -1,54 +1,113 @@
-/* :root {
-  /*
-  /* Example setup for custom colors */
-/* Generate at: https://once-ui.com/customize */
-/*
-  --scheme-brand-100: #08002f;
-  --scheme-brand-200:  #04025c;
-  --scheme-brand-300:  #1f398e;
-  --scheme-brand-400:  #3856ae;
-  --scheme-brand-500:  #5071cc;
-  --scheme-brand-600:  #6f94f1;
-  --scheme-brand-700:  #8db3ff;
-  --scheme-brand-800:  #b2dbff;
-  --scheme-brand-900:  #bfe8ff;
-  --scheme-brand-1000: #ccf6ff;
-  --scheme-brand-1100: #d2fcff;
-  --scheme-brand-1200: #d2fcff;
-  --scheme-brand-600-10: rgba(111,148,241,0.1);
-  --scheme-brand-600-30: rgba(111,148,241,0.3);
-  --scheme-brand-600-50: rgba(111,148,241,0.5);
+/* Gradient text effect for headings */
+h1,
+h2 {
+  background: linear-gradient(135deg, var(--brand-on-background-strong) 0%, var(--accent-on-background-strong) 50%, var(--brand-on-background-strong) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 6s ease infinite;
+}
 
-  --scheme-accent-100:  #030b10;
-  --scheme-accent-200:  #0d181d;
-  --scheme-accent-300:  #364248;
-  --scheme-accent-400:  #505d64;
-  --scheme-accent-500:  #69777e;
-  --scheme-accent-600:  #8a989f;
-  --scheme-accent-700:  #a8b7bf;
-  --scheme-accent-800:  #c8d7df;
-  --scheme-accent-900:  #d5e4ec;
-  --scheme-accent-1000: #e2f1f9;
-  --scheme-accent-1100: #e9f8ff;
-  --scheme-accent-1200: #efffff;
-  --scheme-accent-600-10: rgba(138,152,159,0.1);
-  --scheme-accent-600-30: rgba(138,152,159,0.3);
-  --scheme-accent-600-50: rgba(138,152,159,0.5);
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-  --scheme-neutral-100:  #020b10;
-  --scheme-neutral-200:  #0b181d;
-  --scheme-neutral-300:  #344248;
-  --scheme-neutral-400:  #4f5d64;
-  --scheme-neutral-500:  #68777e;
-  --scheme-neutral-600:  #89989f;
-  --scheme-neutral-700:  #a7b7be;
-  --scheme-neutral-800:  #c7d7df;
-  --scheme-neutral-900:  #d4e4ec;
-  --scheme-neutral-1000: #e1f2f9;
-  --scheme-neutral-1100: #e7f8ff;
-  --scheme-neutral-1200: #eeffff;
-  --scheme-neutral-600-10: rgba(137,152,159,0.1);
-  --scheme-neutral-600-30: rgba(137,152,159,0.3);
-  --scheme-neutral-600-50: rgba(137,152,159,0.5);
-  /*
-}*/
+/* Colorful glow on avatar */
+[class*="Avatar"] img,
+img[alt*="avatar" i],
+img[alt*="Avishka" i] {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.4), 0 0 60px rgba(6, 182, 212, 0.2);
+  border: 2px solid rgba(139, 92, 246, 0.3) !important;
+  transition: box-shadow 0.4s ease;
+}
+
+[class*="Avatar"] img:hover,
+img[alt*="avatar" i]:hover,
+img[alt*="Avishka" i]:hover {
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.6), 0 0 80px rgba(6, 182, 212, 0.35);
+}
+
+/* Enhanced card surfaces with subtle gradient border */
+[class*="Card"],
+[class*="card"] {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[class*="Card"]:hover,
+[class*="card"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.15), 0 4px 16px rgba(6, 182, 212, 0.1);
+}
+
+/* Vibrant brand-colored links */
+a[class*="SmartLink"],
+a[class*="link"] {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a[class*="SmartLink"]:hover,
+a[class*="link"]:hover {
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
+}
+
+/* Colorful tag/badge pills */
+[class*="Tag"],
+[class*="Badge"],
+[class*="badge"] {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[class*="Tag"]:hover,
+[class*="Badge"]:hover,
+[class*="badge"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+}
+
+/* Smooth button glow */
+button[class*="Button"],
+a[class*="Button"] {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button[class*="Button"]:hover,
+a[class*="Button"]:hover {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4), 0 0 40px rgba(6, 182, 212, 0.2);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.5), rgba(6, 182, 212, 0.5));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.8), rgba(6, 182, 212, 0.8));
+}
+
+/* Subtle glow effect on the page background */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at 30% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(6, 182, 212, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}

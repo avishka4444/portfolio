@@ -75,12 +75,12 @@ const home: Home = {
   },
   subline: (
     <>
-      Full-stack Software Engineer with hands-on experience building and scaling
-      high-traffic applications (10k+ daily users) across fintech, gaming, and
-      education domains. Skilled in React, Next.js, NestJS, and PostgreSQL with
-      a strong track record of optimizing performance and deployment efficiency.
-      Experienced in AWS infrastructure and cross-functional delivery for
-      international clients.
+      Full-stack Software Engineer with 3+ years of experience shipping
+      production systems across IoT, fintech, gaming, and education domains.
+      Currently at Zebra Technologies building RFID test automation with Go and
+      React. Skilled in Go, Java/Spring Boot, Node.js, React, Next.js, and
+      PostgreSQL on AWS. Delivers end-to-end from problem framing through
+      production health.
     </>
   ),
 };
@@ -106,12 +106,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I&apos;m a full-stack Software Engineer with hands-on experience
-        building and scaling high-traffic applications (10k+ daily users) across
-        fintech, gaming, and education domains. Skilled in React, Next.js,
-        NestJS, and PostgreSQL with a strong track record of optimizing
-        performance and deployment efficiency. Experienced in AWS infrastructure
-        and cross-functional delivery for international clients.
+        I&apos;m a full-stack Software Engineer with 3+ years of experience
+        shipping production systems end-to-end across IoT, fintech, gaming, and
+        education domains. Currently building RFID test automation at Zebra
+        Technologies with Go and React. Skilled in React, Next.js, Go,
+        Java/Spring Boot, and Node.js with PostgreSQL, Kafka, and AWS. Strong
+        track record of optimizing performance, automating deployments, and
+        delivering for international clients.
       </>
     ),
   },
@@ -120,21 +121,52 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Zebra Technologies",
+        timeframe: "Aug 2026 - Present · Sri Lanka",
+        role: "Software Engineer, Professional II",
+        achievements: [
+          <>
+            Building a full-stack RFID test automation suite in Go and React,
+            orchestrating end-to-end validation of reader and hardware behavior
+            across 50+ test scenarios.
+          </>,
+          <>
+            Developing Go backend services to programmatically configure,
+            execute, and verify RFID device test cases, replacing manual QA
+            workflows.
+          </>,
+          <>
+            Implementing React dashboards for configuring test runs, monitoring
+            live execution status, and generating pass/fail reports with
+            drill-down diagnostics.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Arimac Digital",
-        timeframe: "Jan 2026 - Present · Colombo (Hybrid)",
+        timeframe: "Jan 2026 - Aug 2026 · Colombo (Hybrid)",
         role: "Software Engineer I",
         achievements: [
           <>
-            Building and maintaining enterprise digital solutions for fintech
-            and BFSI clients across web and mobile platforms.
+            Designed a Spring Boot payment processing system that automated BNPL
+            loan recovery workflows, improving transaction success rates through
+            configurable retry logic and webhook-based reconciliation.
           </>,
           <>
-            Developing scalable, API-first features in collaboration with
-            cross-functional teams in a hybrid work environment.
+            Built a Kafka-driven bulk data processing module handling 100K+
+            customer records per batch with asynchronous execution, DLQ-based
+            failure recovery, and real-time progress tracking.
           </>,
           <>
-            Contributing to cloud-native deployments on Azure, delivering
-            high-quality software aligned with client requirements.
+            Engineered multi-stage validation pipelines with configurable retry
+            mechanisms and dead-letter queues, reducing failed payment attempts
+            by 30%.
+          </>,
+          <>
+            Improved platform observability by instrumenting services with
+            Grafana dashboards and managing deployments through ArgoCD, cutting
+            mean time to detection by 40%.
           </>,
         ],
         images: [],
@@ -145,61 +177,65 @@ const about: About = {
         role: "Software Engineer",
         achievements: [
           <>
-            Designed and deployed full-stack solutions for Winlads, a gaming and
-            rewards platform serving 5k+ active users, with 10+ microservices
-            and real-time session handling.
+            Developed high-performance React/TypeScript and Next.js (SSR/SSG)
+            frontends serving 5,000+ active users, reducing page load times by
+            20% through code splitting, lazy loading, and image optimization.
           </>,
           <>
-            Optimized PostgreSQL queries and Redis caching, reducing response
-            times by 25% and improving scalability under high-concurrency
-            workloads.
+            Built end-to-end CI/CD pipelines with GitHub Actions, Jenkins,
+            Docker, and AWS ECS, achieving zero-downtime deployments and cutting
+            release cycles from days to hours.
           </>,
           <>
-            Automated CI/CD pipelines with GitHub Actions and SonarQube, cutting
-            deployment time by 30% and improving code quality with static
-            analysis.
+            Optimized PostgreSQL queries and implemented Redis-based job
+            schedulers and caching layers, reducing API response times by 25%
+            and increasing task reliability by 40%.
           </>,
           <>
-            Collaborated with international stakeholders to deliver enterprise
-            web applications aligned with client requirements.
+            Enforced OWASP security best practices and SonarQube quality gates
+            across all repositories, reducing post-release defects by 35%.
           </>,
         ],
         images: [],
       },
       {
         company: "Kingteza Software Solutions (Pvt) Ltd",
-        timeframe: "July 2024 - Jan 2025",
+        timeframe: "Jul 2024 - Jan 2025",
         role: "Associate Software Engineer",
         achievements: [
           <>
-            Delivered scalable features for DVUE and Winlads; reduced deployment
-            time by 30% through optimized CI/CD pipelines.
+            Delivered full-stack features across React, Next.js, and NestJS for
+            gaming and rewards platforms, building reusable UI component
+            libraries and RESTful APIs for game logic, rewards distribution, and
+            session management.
           </>,
           <>
-            Architected and deployed AWS-based infrastructure (EC2, S3,
-            CloudFront), enabling fast, scalable image delivery and optimization
-            for high-traffic applications.
+            Architected AWS serverless infrastructure (S3, CloudFront, Lambda,
+            SQS FIFO + DLQ) that reduced hosting costs by 30% while handling
+            10K+ daily asset requests with sub-100ms latency.
+          </>,
+          <>
+            Implemented JWT/Firebase Auth for secure authentication and i18n
+            localization supporting 3 languages, expanding platform reach to
+            international markets.
           </>,
         ],
         images: [],
       },
       {
         company: "Future Labs (Pvt) Ltd",
-        timeframe: "Jan 2024 - March 2024",
+        timeframe: "Jan 2024 - Mar 2024",
         role: "Associate Software Engineer",
         achievements: [
           <>
-            Led front-end development for Mtrada2 with React/Redux, improving UI
-            responsiveness.
+            Led frontend development for Mtrada2 and PTE Labs using React/Redux
+            and Angular, building modular component architectures with Material
+            UI that improved development velocity across teams.
           </>,
           <>
-            Integrated AWS backend services; supported containerized deployments
-            with Docker and Kubernetes.
-          </>,
-          <>
-            Worked with international stakeholders to deliver high-performance
-            web applications, aligning technical solutions with client
-            requirements.
+            Containerized application stack with Docker and integrated AWS
+            services, reducing environment setup time from hours to minutes and
+            enabling consistent deployments across staging and production.
           </>,
         ],
         images: [],
@@ -210,10 +246,14 @@ const about: About = {
         role: "Software Engineer Intern",
         achievements: [
           <>
-            Developed back-end and front-end features for the PTE scoring engine
-            using Python and Angular; integrated AWS and Stripe payments.
+            Built Python Flask REST APIs for the PTE Labs scoring engine and
+            contributed to the ML model pipeline for automated language
+            proficiency assessment.
           </>,
-          <>Assisted with ML model integration into production workflows.</>,
+          <>
+            Integrated Stripe payment processing into the Angular frontend,
+            enabling secure subscription billing for 500+ users.
+          </>,
         ],
         images: [],
       },
@@ -232,7 +272,8 @@ const about: About = {
             Nov 2019 - Sep 2024 | Second Class Upper Division: GPA - 3.45/4.00
             <br />
             Relevant coursework: Software Engineering, Database Systems,
-            Computer Networks, AI, and Machine Learning.
+            Computer Networks, AI, Machine Learning, Data Structures &
+            Algorithms.
           </>
         ),
       },
@@ -262,6 +303,10 @@ const about: About = {
           </>
         ),
         tags: [
+          {
+            name: "Go",
+            icon: "code",
+          },
           {
             name: "JavaScript",
             icon: "javascript",
@@ -298,8 +343,8 @@ const about: About = {
         icon: "server",
         description: (
           <>
-            Building modern, scalable web applications with React, Next.js, and
-            Node.js ecosystem.
+            Building modern, scalable web applications with React, Next.js,
+            Spring Boot, and Node.js ecosystem.
           </>
         ),
         tags: [
@@ -320,8 +365,8 @@ const about: About = {
             icon: "nestjs",
           },
           {
-            name: ".NET",
-            icon: "dotnet",
+            name: "Spring Boot",
+            icon: "java",
           },
           {
             name: "Express.js",
@@ -332,8 +377,28 @@ const about: About = {
             icon: "angular",
           },
           {
-            name: "Vue.js",
-            icon: "javascript",
+            name: ".NET",
+            icon: "dotnet",
+          },
+          {
+            name: "Redux Toolkit",
+            icon: "react",
+          },
+          {
+            name: "Tailwind CSS",
+            icon: "code",
+          },
+          {
+            name: "Prisma ORM",
+            icon: "code",
+          },
+          {
+            name: "Apache Kafka",
+            icon: "code",
+          },
+          {
+            name: "GraphQL",
+            icon: "code",
           },
         ],
         images: [],
@@ -376,29 +441,21 @@ const about: About = {
         icon: "cloud",
         description: (
           <>
-            AWS infrastructure management, containerization, and CI/CD pipeline
-            automation.
+            AWS and Azure infrastructure, containerization, CI/CD automation,
+            and observability.
           </>
         ),
         tags: [
-          {
-            name: "Microsoft Azure",
-            icon: "azure",
-          },
           {
             name: "AWS",
             icon: "aws",
           },
           {
-            name: "Amazon RDS",
-            icon: "aws",
+            name: "Microsoft Azure",
+            icon: "azure",
           },
           {
-            name: "CloudFormation",
-            icon: "aws",
-          },
-          {
-            name: "ECS",
+            name: "ECS Fargate",
             icon: "aws",
           },
           {
@@ -414,6 +471,22 @@ const about: About = {
             icon: "aws",
           },
           {
+            name: "SQS",
+            icon: "aws",
+          },
+          {
+            name: "SNS",
+            icon: "aws",
+          },
+          {
+            name: "CloudWatch",
+            icon: "aws",
+          },
+          {
+            name: "Amazon RDS",
+            icon: "aws",
+          },
+          {
             name: "Docker",
             icon: "docker",
           },
@@ -425,19 +498,51 @@ const about: About = {
             name: "GitHub Actions",
             icon: "github",
           },
+          {
+            name: "Jenkins",
+            icon: "code",
+          },
+          {
+            name: "ArgoCD",
+            icon: "code",
+          },
+          {
+            name: "SonarQube",
+            icon: "code",
+          },
+          {
+            name: "Grafana",
+            icon: "code",
+          },
+          {
+            name: "Vercel",
+            icon: "code",
+          },
         ],
         images: [],
       },
       {
-        title: "Machine Learning & Deep Learning",
+        title: "AI/ML & LLM Integration",
         icon: "rocket",
         description: (
           <>
-            Advanced machine learning and deep learning expertise for AI model
-            development, training, and deployment.
+            Machine learning, deep learning, and LLM API integration for
+            intelligent applications.
           </>
         ),
         tags: [
+          {
+            name: "LLM API Integration",
+            icon: "code",
+          },
+          {
+            name: "Prompt Engineering",
+            icon: "code",
+          },
+          {
+            name: "ChatGPT API",
+            icon: "code",
+          },
           {
             name: "TensorFlow",
             icon: "python",
